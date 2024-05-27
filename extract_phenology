@@ -1,4 +1,4 @@
-var us_shp = ee.FeatureCollection("projects/ee-phenology-last/assets/US_SHP");
+var us_shp = ee.FeatureCollection("projects/ee-phenology-last/assets/US_SHP");       //你的研究区，研究区过大需要对研究区分块处理
 var extract_band = 'EVI';                //Vegetation index used to extract phenology
 // var extract_band = 'NIRv';
 // var extract_band = 'NDVI';

@@ -1,3 +1,4 @@
+//********************************************************parameters***********************************************************
 var us_shp = ee.FeatureCollection("projects/ee-phenology-last/assets/US_SHP");       //你的研究区，研究区过大需要对研究区分块处理
 var extract_band = 'EVI';                //Vegetation index used to extract phenology
 // var extract_band = 'NIRv';
@@ -23,7 +24,7 @@ var PI = ee.Number(Math.PI);
 var dem = ee.Image("USGS/SRTMGL1_003")         //dem data
 // Map.addLayer(dem.clip(ROI), {min: 0, max: 5000}, 'dem');
 Map.setOptions('satellite')
-//*******************************************************
+//********************************************************************Importing images*****************************************************************************
 var ESA  = ee.ImageCollection("ESA/WorldCover/v100")
 var imageVisParam_ESA = {"opacity":1,"bands":["Map"],"min":10,"max":110,"palette":["#006400","#ffbb22","#ffff4c","#f096ff","#fa0000","#b4b4b4",'#f0f0f0','#0FC9F6','#0096a0','#00cf75','#fae6a0']};
 // var ESA_ROI_landcover=ESA
